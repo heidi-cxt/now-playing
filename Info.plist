@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSAppleScriptEnabled</key>
+    <true/>
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+    
+    <key>LSUIElement</key>
+    <string>1</string>
+
+    <!-- App Transport Security settings -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>genius.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key><true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key><true/>
+                <key>NSExceptionRequiresForwardSecrecy</key><false/>
+                <key>NSAllowsArbitraryLoadsInWebContent</key><true/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
+
